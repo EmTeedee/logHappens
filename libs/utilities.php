@@ -152,7 +152,6 @@ function setting($parameter)
     } else {
         $settings = listSettings($parameter);
         $selected = $settings['default'];
-        $selected = writeSettingsCookie($parameter, $selected);
     }
 
     return $selected;
